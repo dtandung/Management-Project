@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- ADMIN -->
+	
+	<!-- Base Template START -->
+	<definition name="base.template"
+		template="/templates/base-template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="head"
+			value="/common-fragments/head.jsp" />
+		<put-attribute name="header"
+			value="/common-fragments/header.jsp" />
+		<put-attribute name="main-content" value="" />
+		<put-attribute name="footer"
+			value="/common-fragments/footer.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+	<!-- Base Template END -->
+	<!-- Base Template Login START -->
+	<definition name="base.login"
+		template="/templates/base-login.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="head"
+			value="/common-fragments/head.jsp" />
+		<put-attribute name="form-login" value="" />
+		<put-attribute name="footer"
+			value="/common-fragments/footer.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+	<!-- Base Template Login END -->
+	<!-- Login Page START -->
+	<definition name="tiles.login" extends="base.login">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="form-login"
+			value="/main-content-fragments/login.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<add-attribute value="/styles/login.css" />
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+			<add-attribute value="/scripts/login.js" />
+		</put-list-attribute>
+	</definition>
+	<!-- Login Page END -->
+	<!-- Product Page START -->
+	<definition name="tiles.product" extends="base.template">
+		<put-attribute name="title" value="Product Management" />
+		<put-attribute name="main-content"
+			value="/main-content-fragments/product.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<add-attribute value="/styles/product.css" />
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+			<add-attribute value="/scripts/product.js" />
+		</put-list-attribute>
+	</definition>
+	<!-- Product Page END -->
+	<!-- Brand Page START -->
+	<definition name="tiles.brand" extends="base.template">
+		<put-attribute name="title" value="Brand Management" />
+		<put-attribute name="main-content"
+			value="/main-content-fragments/brand.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<add-attribute value="/styles/brand.css" />
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+			<add-attribute value="/scripts/brand.js" />
+		</put-list-attribute>
+	</definition>
+	<!-- Brand Page END -->
+	
+	<!-- USER -->
+
+	<!-- Base Template User START -->
+	<definition name="base.template.user"
+		template="/templates/base-template-user.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="head"
+			value="/common-fragments-user/head-user.jsp" />
+		<put-attribute name="header"
+			value="/common-fragments-user/header-user.jsp" />
+		<put-attribute name="main-content" value="" />
+		<put-attribute name="footer"
+			value="/common-fragments-user/footer-user.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+	<!-- Base Template User END -->
+	<!-- DMX Page START -->
+	<definition name="tiles.dmx" extends="base.template.user">
+		<put-attribute name="title" value="Điện Máy Xanh" />
+		<put-attribute name="main-content"
+			value="/main-content-fragments-user/dmx.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<add-attribute value="/styles/dmx.css" />
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+			<add-attribute value="/scripts/dmx.js" />
+		</put-list-attribute>
+	</definition>
+	<!-- DMX Page END -->
+	<!-- PHONE Page START -->
+	<definition name="tiles.phone" extends="base.template.user">
+		
+		<put-attribute name="main-content"
+			value="/main-content-fragments-user/phone.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<add-attribute value="/styles/phone.css" />
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+			<add-attribute value="/scripts/phone.js" />
+		</put-list-attribute>
+	</definition>
+	<!-- PHONE Page END -->
+	<!-- PRODUCT OF BRAND Page START -->
+	<definition name="tiles.productofbrand" extends="base.template.user">
+		<put-attribute name="main-content"
+			value="/main-content-fragments-user/productOfBrand.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<add-attribute value="/styles/productOfBrand.css" />
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+			<add-attribute value="/scripts/productOfBrand.js" />
+		</put-list-attribute>
+	</definition>
+	<!-- PRODUCT OF BRAND Page END -->
+	<!-- DETAIL PRODUCT Page START -->
+	<definition name="tiles.detailproduct" extends="base.template.user">
+		<put-attribute name="main-content"
+			value="/main-content-fragments-user/detailProduct.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<add-attribute value="/styles/detailProduct.css" />
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+			<add-attribute value="/scripts/detailProduct.js" />
+		</put-list-attribute>
+	</definition>
+	<!-- DETAIL PRODUCT Page END -->
+</tiles-definitions>

@@ -1,0 +1,285 @@
+/* Common Style START */
+body {
+    background: #f3f3f3;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a.bold-link {
+    color: #007bff;
+    font-weight: bold;
+}
+img {
+    max-width: 100%;
+}
+
+.linethough {
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 14px;
+    color: #999;
+    display: inline-block;
+    line-height: 25px;
+}
+.discount-percent {
+    font-size: 1rem;
+    display: inline-block;
+    color: #d0021b;
+    font-weight: 600;
+}
+.section-title {
+    font-size: 18px;
+    color: #288ad6;
+    line-height: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.section-title a{
+	color: #288ad6;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: unset;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+    height: 50px;
+    width: 30px;
+}
+
+/* Header START */
+header {
+    background: #4a90e2;
+    height: 50px;
+}
+
+header .dmx-logo {
+    line-height: 30px;
+    background-position: 0 0;
+    width: 174px;
+    height: 32px;
+    display: block;
+    margin-top: 10px;
+}
+header .province-box {
+    float: left;
+    vertical-align: middle;
+    background: #2878d7;
+    height: 35px;
+    padding: 0 5px;
+    border-radius: 4px;
+    margin: 7px 0 7px 7px;
+}
+header .province-box b {
+    display: block;
+    font-size: 10px;
+    color: #bae8ff;
+    height: 11px;
+    padding: 2px 0;
+    font-weight: normal;
+}
+header .province-box a {
+    display: inline-block;
+    font-size: 11px;
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    width: 130px;
+}
+header .province-box .modal-content {
+    position: relative;
+}
+header .province-box .modal-body {
+    padding: 15px 25px;
+}
+header .province-box .close {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    opacity: 1;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+}
+
+header .province-box .close:before {
+    color: #fff;
+    content: '✕';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    width: 26px;
+    height: 26px;
+    font-family: Tahoma;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: block;
+    background-color: #000;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 1);
+}
+header .province-box .accept-btn {
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 0;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 90%;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background: #fd6e1d;
+    margin: auto;
+}
+header .province-box .modal-footer {
+    background-color: #f3f3f3;
+}
+header .search-area {
+    margin-top: 7px;
+}
+header .search-area input {
+    height: 34px;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-left: 15px;
+}
+header .refer-link {
+    float: right;
+    height: 34px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin: 2px 0 7px 26px;
+    position: relative;
+}
+header .refer-link.one-line {
+    margin-top: 12px;
+}
+header .refer-link span {
+    display: block;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 300;
+    color: #d0efff;
+}
+/* Header END */
+/* ================================= */
+.icon-dmx {
+    background-image: url(../images/dmx/icondesktop@1x.v202007011410.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* Common Style END */
+.top-banner {
+    background-color: #ac0911;
+}
+.discount-in-day .group-tabs {
+    width: 100%;
+}
+.discount-in-day .group-tabs .box-filter {
+    display: flex;
+}
+.btn {
+    border: 1px solid #bdb9b9;
+    margin-right: 8px;
+}
+.btn:focus{
+	box-shadow: none;
+}
+.filter-product {
+	font-size: 18px;
+}
+
+
+.discount-in-day .content {
+	width:100%;
+}
+
+
+.box-main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 70% 30%;
+    border-top: 1px solid #989696;
+    padding-top: 15px;
+    overflow: hidden;
+    margin-top: 15px;
+    clear: both;
+}
+.box_left {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    height: fit-content;
+}
+.box_left img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 100%;
+}
+.box_right {
+    margin-left: 10px;
+    border-radius: 10px;
+    /* background-color: #fff; */
+}
+.box-price {
+    color: #d0021c;
+    border-top: 4px solid #4a90e2;
+    border-left: 1px solid #4a90e2;
+    border-right: 1px solid #4a90e2;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    background-color: #fff;
+    padding: 12px 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+.box-detail {
+    border: 1px solid #4a90e2;
+    border-top: 0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+}
+.box-detail-content {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.box-detail--top {
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 8px 10px;
+}
+.box-detail--main {
+    padding: 15px 10px 10px 10px;
+}
+
+.button-buy-now{
+	background-color: #fb6e2e;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    padding: 14px 10px;
+    text-align: center;
+}
+
+.button-buy-now:hover{
+	text-decoration: none;
+	color: #fff;
+}
+

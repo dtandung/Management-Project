@@ -1,0 +1,107 @@
+/* Mobile and Tablet*/
+@media only screen and (max-width: 1024px) {
+	.group-tabs {
+		white-space: nowrap;
+	}
+	.brandInfo {
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space: nowrap;
+		grid-template-columns: repeat(11, minmax(135px, 1fr)) !important;
+	}
+	.mobile-scroll {
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+	header {
+		height: auto !important;
+	}
+}
+/* Mobile */
+@media only screen and (max-width: 739px) {
+	header .province-box {
+		width: 200px
+	}
+	.pagination .page-item {
+		padding: 0 !important;
+		text-align: center;
+		margin-right: 2px !important;
+	}
+	footer .row {
+		display: initial;
+	}
+	/*Home Page*/
+	.left-area {
+		flex-wrap: wrap;
+	}
+	.search-area {
+		width: 100%;
+		margin-right: 10px;
+	}
+	.right-area {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	.products-list li {
+		width: calc(100%/ 2) !important;
+	}
+	.dropdown .dropdown-menu {
+		width: 370px !important;
+	}
+	.brandInfoFilter {
+		grid-template-columns: repeat(auto-fill, minmax(105px, 1fr)) !important;
+	}
+	.dropdown {
+		position: static !important;
+	}
+	.form-price {
+		width: 350px;
+	}
+	.discount-in-day {
+		padding: 10px;
+	}
+	/*Detail Page*/
+	.box-main {
+		grid-template-columns: 1fr !important;
+	}
+	.box_right {
+		margin: 10px !important;
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+	.left-area {
+		width: 100%;
+	}
+	.search-area {
+		width: 100%;
+	}
+	.right-area {
+		width: 100%;
+		flex-direction: row-reverse;
+		display: flex;
+		justify-content: space-around;
+	}
+}
+/*Tablet and PC*/
+@media only screen and (min-width: 1023px) and (max-width: 1200px) {
+	header .container .row {
+		flex-wrap: nowrap !important;
+	}
+	header {
+		height: 75px !important;
+	}
+	.right-area {
+		flex-direction: row-reverse;
+		display: flex !important;
+		flex-wrap: nowrap !important;
+	}
+}
+/* PC */
+@media only screen and (min-width: 1024px) {
+}
